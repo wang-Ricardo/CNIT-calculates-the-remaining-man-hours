@@ -1,0 +1,7 @@
+cd 'E:\SVN_资料\Cdg\Others\wanghuixiang\资料\计算剩余工时\计算剩余工时 V102\'    
+
+pyinstaller --onefile --windowed --icon=time.png main.py
+
+
+pyinstaller --onefile --windowed --icon=time.png --hidden-import win32gui --hidden-import win32api --hidden-import win32con --add-data "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\Lib\site-packages\pywin32_system32\pythoncom38.dll;." --add-data "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\Lib\site-packages\pywin32_system32\pywintypes38.dll;." main.py
+
